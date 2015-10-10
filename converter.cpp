@@ -3,8 +3,8 @@
 #include <cmath>
 
 int base_conversion (int input, int inputbase, int outputbase);
-int decimal2base (int input, int base);
-int base2decimal (int input, int base);
+int decimal2base (int input, double base);
+int base2decimal (int input, double base);
 
 int main (void){
 	long long int input, inputbase, outputbase;
@@ -52,23 +52,23 @@ int base_conversion (int input, int inputbase, int outputbase) {
 		}
 }
 
-int decimal2base (int input, int base) {
+int decimal2base (int input, double base) {
 	int output = 0, i;
 	
 	while (input != 0) {
 		i = 0;
-		while (input - pow((double) base,i + 1) >= 0) {
+		while (input - pow(base,i + 1) >= 0) {
 			i++;
 		}
 
 		output += pow(10.0,i);
-		input -= pow((double) base,i);
+		input -= pow(base,i);
 	}
 
 	return output;
 }
 
-int base2decimal (int input, int base) {
+int base2decimal (int input, double base) {
 	int output = 0, i;
 	
 	while (input != 0) {
@@ -77,7 +77,7 @@ int base2decimal (int input, int base) {
 			i++;
 		}
 
-		output += pow((double) base,i);
+		output += pow(base,i);
 		input -= pow(10.0,i);
 	}
 
