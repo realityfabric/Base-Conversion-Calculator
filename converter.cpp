@@ -1,12 +1,6 @@
-//Program written 4/5/2013
-
 #include <iostream>
 #include <string>
 #include <cmath>
-
-using std::cin;
-using std::cout;
-using std::endl;
 
 int base_conversion (int input, int inputbase, int outputbase);
 int decimal2base (int input, int base);
@@ -15,34 +9,34 @@ int base2decimal (int input, int base);
 int main (void){
 	long long int input, inputbase, outputbase;
 	char y = 'y';
-	cout << "Base Conversion:" << endl;
+	std::cout << "Base Conversion:" << std::endl;
 
 	do {
-		cout << "Input base of number to be converted: ";
-		cin >> inputbase;
+		std::cout << "Input base of number to be converted: ";
+		std::cin >> inputbase;
 		while (inputbase <= 1) {
-			cout << "Number must be larger than 1: ";
-			cin >> inputbase;
+			std::cout << "Number must be larger than 1: ";
+			std::cin >> inputbase;
 		}
-		cout << "Please input base to convert to: ";
-		cin >> outputbase;
+		std::cout << "Please input base to convert to: ";
+		std::cin >> outputbase;
 		while (outputbase <= 1) {
-			cout << "Number must be larger than 1: ";
-			cin >> outputbase;
+			std::cout << "Number must be larger than 1: ";
+			std::cin >> outputbase;
 		}
 
-		cout << "Please input an integer to convert: ";
-		cin >> input;
+		std::cout << "Please input an integer to convert: ";
+		std::cin >> input;
 		while (input < 0) {
-			cout << "Number must be larger than 0: ";
-			cin >> input;
+			std::cout << "Number must be larger than 0: ";
+			std::cin >> input;
 		}
 
-		cout << input << " base " << inputbase << " in base " << outputbase << " is " << base_conversion (input, inputbase, outputbase) << endl;
+		std::cout << input << " base " << inputbase << " in base " << outputbase << " is " << base_conversion (input, inputbase, outputbase) << std::endl;
 
-		cout << "Continue? (y/n) ";
-		cin >> y;
-		cout << endl;
+		std::cout << "Continue? (y/n) ";
+		std::cin >> y;
+		std::cout << std::endl;
 	} while (y == 'y');
 
 	return 0;
