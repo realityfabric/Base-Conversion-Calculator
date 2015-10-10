@@ -1,10 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-
-int base_conversion (int input, int inputbase, int outputbase);
-int decimal2base (int input, double base);
-int base2decimal (int input, double base);
+#include "converter.h"
 
 int main (void){
 	long long int input, inputbase, outputbase;
