@@ -1,6 +1,6 @@
 base-conversion
 ===============
 
-Converts to and from bases
+A program which takes any number with a base between 2 and 10 and converts it to its equivilent in any base between 2 and 10.
 
-Converterting to and from bases greater than 10 may have mixed and unreliable results
+Written in C++, and with a GUI written with Qt 5.5.1.
