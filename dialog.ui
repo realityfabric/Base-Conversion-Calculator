@@ -39,14 +39,14 @@
        </spacer>
       </item>
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="label_input">
         <property name="text">
          <string>Input:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="label_output">
         <property name="text">
          <string>Output:</string>
         </property>
@@ -70,7 +70,11 @@
        </spacer>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_input"/>
+       <widget class="QLineEdit" name="lineEdit_input">
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QLineEdit" name="lineEdit_result">
@@ -84,7 +88,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="label_base">
         <property name="text">
          <string>Base:</string>
         </property>
