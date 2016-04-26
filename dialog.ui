@@ -97,7 +97,7 @@
       <item>
        <widget class="QSpinBox" name="spinBox_inputBase">
         <property name="minimum">
-         <number>1</number>
+         <number>2</number>
         </property>
         <property name="maximum">
          <number>10</number>
@@ -110,7 +110,7 @@
       <item>
        <widget class="QSpinBox" name="spinBox_outputBase">
         <property name="minimum">
-         <number>1</number>
+         <number>2</number>
         </property>
         <property name="maximum">
          <number>10</number>
