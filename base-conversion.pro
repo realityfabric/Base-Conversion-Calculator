@@ -14,3 +14,6 @@ HEADERS  += dialog.h \
     converter.h
 
 FORMS    += dialog.ui
+
+DISTFILES += \
+    README.md
