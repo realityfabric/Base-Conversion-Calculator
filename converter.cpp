@@ -1,9 +1,8 @@
-#include <iostream>
 #include <string>
 #include <cmath>
 #include "converter.h"
 
-int base_conversion (int input, int inputbase, int outputbase) {
+qint64 base_conversion (qint64 input, qint64 inputbase, qint64 outputbase) {
 		switch (inputbase) {
 		case 10:
 			return decimal2base (input, outputbase);
@@ -13,8 +12,8 @@ int base_conversion (int input, int inputbase, int outputbase) {
 		}
 }
 
-int decimal2base (int input, double base) {
-	int output = 0, i;
+qint64 decimal2base (qint64 input, double base) {
+    qint64 output = 0, i;
 	
 	while (input != 0) {
 		i = 0;
@@ -29,8 +28,8 @@ int decimal2base (int input, double base) {
 	return output;
 }
 
-int base2decimal (int input, double base) {
-	int output = 0, i;
+qint64 base2decimal (qint64 input, double base) {
+    qint64 output = 0, i;
 	
 	while (input != 0) {
 		i = 0;
