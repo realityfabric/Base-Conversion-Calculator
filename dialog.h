@@ -18,7 +18,7 @@ public:
     ~Dialog();
 
 private slots:
-    void on_lineEdit_input_textChanged(const QString &arg1);
+    void on_lineEdit_input_textChanged(const QString &input);
 
 private:
     Ui::Dialog *ui;

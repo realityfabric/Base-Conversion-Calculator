@@ -13,10 +13,10 @@ Dialog::~Dialog()
     delete ui;
 }
 
-void Dialog::on_lineEdit_input_textChanged(const QString &arg1)
+void Dialog::on_lineEdit_input_textChanged(const QString &input)
 {
     ui->lineEdit_result->setText(QString::number(
-                                     base_conversion(arg1.toULongLong(),
+                                     base_conversion(input.toULongLong(),
                                      ui->spinBox_inputBase->text().toULongLong(),
                                      ui->spinBox_outputBase->text().toULongLong()))
                                  );
