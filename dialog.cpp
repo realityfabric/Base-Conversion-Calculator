@@ -18,7 +18,8 @@ void Dialog::on_lineEdit_input_textChanged(const QString &input)
     ui->lineEdit_result->setText(QString::number(
                                      base_conversion(input.toULongLong(),
                                      ui->spinBox_inputBase->text().toULongLong(),
-                                     ui->spinBox_outputBase->text().toULongLong()))
+                                     ui->spinBox_outputBase->text().toULongLong())
+                                     )
                                  );
 }
 
