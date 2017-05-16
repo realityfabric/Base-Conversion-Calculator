@@ -20,6 +20,10 @@ public:
 private slots:
     void on_lineEdit_input_textChanged(const QString &input);
 
+    void on_spinBox_inputBase_valueChanged(int inputBase);
+
+    void on_spinBox_outputBase_valueChanged(int outputBase);
+
 private:
     Ui::Dialog *ui;
 };
